@@ -1,1 +1,63 @@
-Ghost cms ime destek amacıyla bu sayfayı kurdum
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güzel Bir Grafik</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 50%; /* Daireyi oluşturan stil */
+            margin: 50px auto; /* Ortalamak için kullanılan stil */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
+Bu kod parçası, bir daireyi temsil eden bir div öğesi oluşturur. Daireyi oluşturmak için border-radius CSS özelliğini kullanırız ve background-color ile dairenin rengini belirleriz. Daireyi ortalamak için margin özelliğini kullanırız.
+
+Bu sadece temel bir örnek olup, grafik tasarımıyla ilgileniyorsanız daha karmaşık grafikler ve stiller oluşturabilirsiniz. CSS kullanarak çeşitli özellikleri deneyerek farklı grafikler oluşturabilirsiniz.
+
+
+
+
+User
+animasyonlu bir grafik şeklinde hazırla
+ChatGPT
+Tabii ki, bir animasyonlu grafik oluşturmak için CSS animasyonları kullanabiliriz. Aşağıda, renk değiştiren ve dönen bir animasyonlu daire örneği bulunmaktadır:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasyonlu Grafik</title>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); background-color: #3498db; }
+            25% { transform: rotate(90deg); background-color: #e74c3c; }
+            50% { transform: rotate(180deg); background-color: #2ecc71; }
+            75% { transform: rotate(270deg); background-color: #f1c40f; }
+            100% { transform: rotate(360deg); background-color: #3498db; }
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 50%;
+            margin: 50px auto;
+            animation: spin 4s linear infinite; /* Animasyonu ekleyin */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
